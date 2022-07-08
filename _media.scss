@@ -1,0 +1,285 @@
+
+
+
+@media (max-width: 1000px) {
+    * {
+        font-size: 45%;
+    }
+
+}
+
+@media (max-width: 790px) {
+    * {
+        font-size: 35%;
+    }
+
+    p, li{
+        font-size: 3rem;
+    }
+
+    
+    // <!-- NAVBAR STARTS
+
+    header {
+        position: fixed;
+        background-color: transparent;
+
+        #header-container {
+
+            padding-top: 0;
+
+            #navbar {
+                position: absolute;
+                top: 0rem;
+                right: 7rem;
+                // padding: 4rem;
+                background-color: $color-light;
+                display: none;
+                box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+                z-index: 50;
+    
+                ul {
+                    flex-direction: column;
+                    text-align: right;
+                }
+        
+                li {
+                    margin: 1rem 2rem;
+                }
+    
+                a {
+                    &:after {
+                        bottom: -0.3rem;
+                    }
+                }
+            }
+    
+            #button-phone {
+                display: none;
+            }
+            
+            #hamburger {
+                display: block;
+                position: absolute;
+                top: -4rem;
+                right: 1rem;
+                color: $color-half;
+                font-size: 16rem;
+                padding-right: 1rem;
+            }
+        }
+    }
+
+    
+  
+    
+
+    // NAVBAR ENDS -->
+
+    #social-container {
+        width: 4.5rem;
+        right: 2.6%;
+        
+        .social-phone-icon {
+            display: block;
+        }
+    }
+
+    
+
+
+    // <!-- WELCOME SECTION START
+
+    main {
+        top: 0;
+    }
+
+    #welcome-section {
+
+        padding: 3rem 0 0 0;
+
+        p {
+            margin-top: 4rem;
+            margin-bottom: 9rem;
+        }
+    }
+
+    .welcome-section-container {
+        position: relative;
+        grid-template-columns: 1fr;
+        text-align: center;
+
+        .welcome-text {
+            padding: 0 2rem;
+            // top: -2rem;
+            margin-bottom: 0;
+        }
+
+        .welcome-imagery-container {
+            width: 95%;
+            margin: 0 auto;
+
+            .welcome-image {
+                left: 50%;
+            }
+
+            .circle {
+                margin-left: 0;
+            }
+        }
+    }
+
+    
+
+    // WELCOME SECTION ENDS -->
+
+
+
+
+    // <!-- ABOUT SECTION START
+
+    
+    #about-section {
+        padding: 20rem 0;
+
+        .about-section-container {
+            flex-direction: column;
+
+            .about-section-dots {
+
+                .dots {
+                    left: 15%;
+                    transform: translateX(0%);
+                    width: 72vw;
+                    justify-content: space-between;
+
+                    .dot {
+                        margin: 0;
+                    }
+                }
+            }
+
+            .about-section-content-wrapper {
+                width: 70vw;
+               
+                .about-section-content-background {
+                    width: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+
+                .about-section-content {
+                    grid-template-columns: 1fr;
+                    text-align: center;
+                    width: 100%;
+
+                    .about-imagery-container {
+                        left: 50%;
+                        transform: translate(-50%, -30%);
+                        width: 20rem;
+                        height: 20rem;
+                    }
+
+                    .about-text-container {
+
+                        h2 {
+                            left: 50%;
+                            transform: translateX(-50%);
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
+    // ABOUT SECTION ENDS -->
+
+
+
+
+
+    // <!-- ACHIEVEMENTS SECTION STARTS
+
+    #achievements {
+        padding: 0rem 0 0rem 0;
+        text-align: center;
+    }
+
+    .achievements-conatiner {
+        grid-template-columns: 1fr;
+        grid-template-rows: 5% 35% 27% 35%;
+
+        .achievements-header {
+            grid-area: 1/1/2/2;
+        }
+
+        .ul-top-left {
+            grid-area: 2/1/3/2;
+        }
+
+        .imagery-container {
+            grid-area: 3/1/4/2;
+        }
+
+        .ul-bottom-right {
+            grid-area: 4/1/5/2;
+            padding-right: 2rem;
+            padding-left: 0;
+        }
+
+        h2 {
+            top: 0;
+            font-size: 7.3rem;
+        }
+
+        
+    }
+
+
+
+    // ACHIEVEMENTS SECTION ENDS -->
+
+    
+}
+
+@media (max-width: 790px) and (orientation: landscape) {
+   
+
+
+    .welcome-section-container {
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+        padding-top: 2rem;
+        padding-right: 6rem;
+        
+        .welcome-text {
+            padding-left: 0rem;
+        }
+    }
+
+    .achievements-conatiner {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0% 40% 70%;
+
+        .achievements-header {
+            grid-area: 1/1/2/3;
+        }
+
+        .ul-top-left {
+            grid-area: 2/1/3/2;
+        }
+
+        .imagery-container {
+            grid-area: 3/1/4/3;
+
+        }
+
+        .ul-bottom-right {
+            grid-area: 2/2/3/3;
+        }
+
+        
+    }
+}

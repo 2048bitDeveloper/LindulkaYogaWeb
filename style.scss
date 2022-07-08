@@ -1,0 +1,503 @@
+@import "variables";
+@import "mixins";
+@import "utilities";
+
+
+
+// <!-- NAVBAR STARTS
+
+
+header {
+    width: 100%;
+    background-color: $color-light;
+    position: fixed;
+    z-index: 90;
+    opacity: 0.97;
+
+    #header-container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+        transition: $transitionTime all ease-in-out;
+
+
+        #navbar {
+            position: relative;
+            margin-bottom: 1.5rem;
+            display: block;
+            transition: $transitionTime all ease-in-out;
+
+            
+            ul {
+                display: flex;
+                justify-content: flex-start;
+            }
+            
+            li {
+                margin-right: 3rem;
+            }
+        
+            a {
+                        
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 0.3rem;
+                    bottom: -1.5rem;
+                    left: 0;
+                    background-color: $color-half;
+                    opacity: 0;
+                    transition: $transitionTime all ease-in-out;
+                }
+        
+                &:hover::after {
+                    opacity: 1;
+                }
+        
+            }
+        
+            
+        }
+        
+        #button-phone {
+            position: relative;
+            display: flex;
+            align-items: center;
+            // font-size: 5rem;
+            padding-right: 3rem;
+        }
+    
+        #hamburger {
+            display: none;
+            transition: $transitionTime ease-in-out;
+        }
+    }
+    
+}
+
+
+
+button {
+    padding: 0.5rem 6rem 0.5rem 2rem;
+    font-size: 2.2rem;
+    background-color: transparent;
+    border: 2px solid $color-half;
+    border-radius: 1.8rem;
+    letter-spacing: 0.02em;
+}
+
+#button-phone-number {
+    opacity: 1;
+    transition: $transitionTime all ease-in-out;
+}
+
+.phone-icon {
+    position: absolute;
+    top: 0;
+    right: 0.2rem;
+    width: 10rem;
+    height: 8rem;
+    transform: translateY(-25%);
+
+    svg {
+        width: 100%;
+        height: 100%;
+        fill: $color-half;
+    }
+}
+
+
+
+// NAVBAR ENDS -->
+
+
+
+
+main {
+    position: relative;
+    top: 8.5rem;
+}
+
+#social-container {
+    position: fixed;
+    top: 50vh;
+    right: 1rem;
+    width: 6rem;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    transition: $transitionTime ease-in-out;
+    // @include border;
+
+    .social-phone-icon {
+        display: none;
+    }
+    
+    .social-whatsapp-icon, .social-facebook-icon, .social-phone-icon {
+        fill: $color-half;
+    }
+}
+
+
+
+
+
+// <!-- WELCOME SECTION START
+
+#welcome-section {
+    background-color: $color-light;
+    padding: 8rem 0;
+}
+
+.welcome-section-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    position: relative;
+
+    .welcome-text-container {
+        z-index: 2;
+        
+        .linda {
+            position: relative;
+            display: inline-block;
+            margin-right: 2rem;
+    
+            .dot1 {
+                @include dot-dark-first-name;
+                position: absolute;
+                top: 0;
+                left: 25.5%;
+                top: 15%
+            }
+        }
+    
+        .donathova {
+            position: relative;
+            display: inline-block;
+            
+            .dot2 {
+                @include dot-dark-surname;
+                position: absolute;
+                top: 15%;
+                left: 43.4%;
+            }
+    
+            .dot3 {
+                @include dot-dark-surname;
+                position: absolute;
+                top: 15%;
+                right: -0.7%;
+            }
+        }
+
+        .welcome-text {
+            padding-right: 3rem;
+        }
+    }
+
+    .welcome-imagery-container {
+        // @include border;
+        width: 100%;
+        position: relative;
+
+        .image {
+            position: absolute;
+           width: 100%;
+           top: -16%;
+           left: 45%;
+           transform: translateX(-50%) scale(1.15);
+        }
+
+        @keyframes spin {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(359deg);
+            }
+          }
+
+        .circle {
+            @include circle(100%);
+            position: relative;
+            margin-left: -3rem;
+            animation: spin 60s infinite linear;
+            animation-direction: reverse;
+            // --fa-animation-direction: reverse;
+            // --fa-animation-duration: 60s;
+    
+            .dot {
+                @include dot-half;
+                width: 2rem;
+                height: 2rem;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: -1.2rem;
+    
+            }
+        }
+    }
+
+}
+
+
+
+// WELCOME SECTION ENDS -->
+
+
+
+
+// <!-- ABOUT SECTION STARTS
+
+#about-section {
+    position: relative;
+    padding: 24rem 0;
+
+    .about-section-container {
+        display: flex;
+        align-items: center;
+    
+        .about-section-dots {
+            position: relative;
+            flex: 25%;
+            width: 100%;
+    
+            .dots {   
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                display: flex;
+                flex-direction: row;
+        
+                .dot {
+                    @include dot-light;
+                    margin: 0 1rem;
+                }
+            }
+        }
+
+        .about-section-content-wrapper {
+            width: 90rem;
+            position: relative;
+
+            .about-section-content-background {
+                width: 90%;
+                height: 100%;
+                background-color: $color-light;
+                border-radius: 8rem;
+                position: absolute;
+                right: 0;
+            }
+
+            .about-section-content {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+       
+    
+                .about-imagery-container {
+                    position: relative;
+                    width: 30rem;
+                    height: 30rem;
+
+                    .circle {
+                        @include circle(100%);
+                        background-color: $color-light;
+                    }
+
+                    .image {
+                        position: absolute;
+                       width: 100%;
+                       top: 0%;
+                       left: 50%;
+                       transform: translateX(-50%) scale(1.2);
+                    }
+                }
+        
+                .about-text-container {
+                    padding: 4rem;
+                    position: relative;
+
+                    ul{
+                        padding-left: 0;
+                    }
+                    
+                    li{
+                        list-style-type: none;
+                        padding-left: 1.7em;    
+                        text-indent:-1.8em;
+                    }
+                    
+                    li::before{
+                        margin-right:     0.7em; 
+                        width:            1em;
+                        height:           1em;
+                    
+                        display:          inline-block;
+                        vertical-align:   middle;
+                        border-radius: 50%;
+                        background-color: $color-dark;
+                        content:          ' '
+                    }
+    
+                    h2 {
+                        position: absolute;
+                        top: -1.05em;
+                        display: block;
+            
+                        .dot {
+                            @include dot-half;
+                            position: absolute;
+                            left: 12.2%;
+                            top: 51%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// ABOUT SECTION ENDS -->
+
+
+
+
+// <!-- ACHIEVEMENTS SECTION STARTS
+
+#achievements {
+    padding: 10rem 0 24rem 0;
+}
+
+.achievements-conatiner {
+    display: grid;
+    grid-template-columns: 2.5fr 5fr 2.5fr;
+    grid-template-rows: 2fr 8fr;
+    align-items: center;
+
+    .achievements-header {
+        grid-area: 1/2/2/3;
+    }
+
+    .ul-top-left {
+        grid-area: 2/1/3/2;
+        padding-right: 2rem;
+    }
+
+    .imagery-container {
+        position: relative;
+        grid-area: 2/2/3/3;
+        // padding: 2rem;
+
+        .circle {
+            position: relative;
+            @include circle(100%);
+            // background-color: $color-light;
+        }
+
+        .image {
+            position: absolute;
+           width: 100%;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -56%) scale(1.25);
+        }
+    }
+
+    .ul-bottom-right {
+        grid-area: 2/3/3/4;
+        padding-left: 2rem;
+    }
+
+    position: relative;
+
+    ul{
+        padding-left: 0;
+    }
+    
+    li{
+        list-style-type: none;
+        padding-left: 1.7em;    
+        text-indent:-1.8em;
+        margin: 5rem 0;
+    }
+    
+    li::before{
+        margin-right:     0.7em; 
+        width:            1em;
+        height:           1em;
+    
+        display:          inline-block;
+        vertical-align:   middle;
+        border-radius: 50%;
+        background-color: $color-half;
+        content:          ' '
+    }
+
+    h2 {
+        position: absolute;
+        display: block;
+        left: 50%;
+        transform: translateX(-50%);
+
+        .dot {
+            @include dot-half;
+            position: absolute;
+            left: 28.8%;
+            top: 22%;
+        }
+    }
+}
+
+
+
+// ACHIEVEMENTS SECTION ENDS -->
+
+
+
+
+// <!-- CERTIFICATES SECTION STARTS
+
+
+
+// CERTIFICATES SECTION ENDS -->
+
+
+
+
+// <!-- REFERENCE SECTION STARTS
+
+
+
+// REFERENCE SECTION ENDS -->
+
+
+
+
+// <!-- CONTACTS SECTION STARTS
+
+
+
+// CONTACT SECTION ENDS -->
+
+
+
+
+// <!-- FOOTER STARTS
+
+
+
+// FOOTER ENDS -->
+
+
+
+@import "media";
