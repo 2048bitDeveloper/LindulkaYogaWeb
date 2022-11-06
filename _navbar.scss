@@ -1,0 +1,123 @@
+@import "mixins";
+@import "variables";
+@import "utilities";
+
+
+// ┌─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=┐
+// │***          NAVBAR STARTS           ***│
+// └=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─┘
+
+.logo {
+    display: block;
+    background-size: 60px 60px;
+    // background-image: url(/assets/li-logo-websize.svg);
+    width: 30px;
+    height: 30px;
+    // border-radius: 50%;
+    // background-color: $color-dark;
+    cursor: pointer;
+}
+
+header {
+    width: 100%;
+    background-color: $color-light;
+    position: fixed;
+    z-index: 90;
+    opacity: 0.97;
+    // backdrop-filter: blur(10px);
+
+    #header-container {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        transition: $transitionTime all ease-in-out;
+
+        #navbar {
+            position: relative;
+            margin-bottom: 1.5rem;
+            display: block;
+            transition: $transitionTime all ease-in-out;
+
+            ul {
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            li {
+                margin-right: 3rem;
+            }
+
+            a {
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 0.3rem;
+                    bottom: -1.5rem;
+                    left: 0;
+                    background-color: $color-mid;
+                    opacity: 0;
+                    transition: $transitionTime all ease-in-out;
+
+                    .li-logo {
+                        width: 60px;
+                        height: 60px;
+                    }
+                }
+
+                &:hover::after {
+                    opacity: 1;
+                }
+            }
+        }
+
+        #button-phone {
+            position: relative;
+            display: flex;
+            align-items: center;
+            // font-size: 5rem;
+            padding-right: 3rem;
+        }
+
+        #hamburger {
+            display: none;
+            transition: $transitionTime ease-in-out;
+        }
+    }
+}
+
+button {
+    padding: 0.5rem 6rem 0.5rem 2rem;
+    font-size: 2.2rem;
+    background-color: transparent;
+    border: 2px solid $color-mid;
+    border-radius: 1.8rem;
+    letter-spacing: 0.02em;
+}
+
+#button-phone-number {
+    opacity: 1;
+    transition: $transitionTime all ease-in-out;
+}
+
+.phone-icon {
+    position: absolute;
+    top: 0;
+    right: 0.2rem;
+    width: 10rem;
+    height: 8rem;
+    transform: translateY(-25%);
+
+    svg {
+        width: 100%;
+        height: 100%;
+        fill: $color-mid;
+    }
+}
+
+// ┌─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=┐
+// │***           NAVBAR ENDS            ***│
+// └=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─┘

@@ -1,0 +1,92 @@
+
+@import "mixins";
+@import "variables";
+@import "utilities";
+
+
+// ┌─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=┐
+// │***         WELCOME STARTS           ***│
+// └=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─┘
+
+#welcome-section {
+    background-color: $color-light;
+    padding: 17rem 0 8rem 0;
+}
+
+.welcome-section-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    position: relative;
+
+    .welcome-text-container {
+        z-index: 2;
+
+        .linda {
+            position: relative;
+            display: inline-block;
+            margin-right: 2rem;
+
+            .dot1 {
+                @include dot-dark-first-name;
+                position: absolute;
+                top: 0;
+                left: 25.5%;
+                top: 15%;
+            }
+        }
+
+        .donathova {
+            position: relative;
+            display: inline-block;
+
+            .dot2 {
+                @include dot-dark-surname;
+                position: absolute;
+                top: 15%;
+                left: 43.4%;
+            }
+
+            .dot3 {
+                @include dot-dark-surname;
+                position: absolute;
+                top: 15%;
+                right: -0.7%;
+            }
+        }
+
+        .welcome-text {
+            padding-right: 3rem;
+        }
+    }
+
+    .welcome-imagery-container {
+        // @include border;
+        width: 100%;
+        position: relative;
+
+        // .svg-circle {
+        //     stroke: $color-mid;
+        //     fill: none;
+        // }
+
+        .image {
+            position: absolute;
+            width: 100%;
+            top: -16%;
+            left: 45%;
+            transform: translateX(-50%) scale(1.15);
+        }
+
+        @include circle-with-dot;
+
+        // .circle {
+        //     margin-left: -3rem;
+        //     // transform: rotate(-90deg);
+        // }
+    }
+}
+
+// ┌─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=┐
+// │***          WELCOME ENDS            ***│
+// └=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─┘

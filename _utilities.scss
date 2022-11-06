@@ -15,44 +15,68 @@ a {
     color: $color-dark;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Manrope", sans-serif;
+}
+
 h1 {
     font-family: $headlines;
     font-weight: 200;
-    font-size: 9.6rem;
+    font-size: clamp(7rem, 10vw, 9.6rem);
     line-height: 1.1em;
     // @include border;
 }
 
 h2 {
+    // @include h2;
     font-family: $headlines;
     font-weight: 300;
-    font-size: 5.7rem;
+    font-size: clamp(4.2rem, 4vw, 6rem);
+}
+
+h3 {
+    // font-size: 3rem;
+    font-size: clamp(1.6rem, 2vw, 4rem);
+    font-weight: 700;
+    line-height: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1.7rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
 }
 
 p {
     font-family: $copy;
-    font-size: 1.9rem;
+    font-size: clamp(1.8rem, 1.5vw, 2.2rem);
     line-height: 1.4em;
     font-weight: 400;
     margin-bottom: 2rem;
 }
 
-.perex {
+.bold .perex {
     font-weight: 700;
 }
 
 li {
     list-style: none;
     position: relative;
-    font-size: 1.9rem;
-    line-height: 1.4em;
-    font-weight: 400;
+    font-size: clamp(1.8rem, 1.5vw, 2.2rem);
+    line-height: 1.5;
+    font-weight: 200;
 }
-
 
 .wrapper {
     position: relative;
-    max-width: 117rem;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 3rem;
     // @include border;
@@ -68,6 +92,19 @@ button {
     display: block;
 }
 
+.hidden {
+    display: none;
+}
+
 i {
-    color: $color-half;
+    color: $color-mid;
+}
+
+.pill {
+    @include pill;
+}
+
+.active {
+    background-color: $color-dark;
+    color: $color-light;
 }

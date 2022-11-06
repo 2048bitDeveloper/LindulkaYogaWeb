@@ -1,0 +1,174 @@
+@import "mixins";
+@import "variables";
+@import "utilities";
+
+// ┌─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=┐
+// │***         PLACES STARTS            ***│
+// └=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─┘
+
+#places {
+    user-select: none;
+    padding-top: 10rem;
+
+    .places-container {
+        .places-header {
+            position: relative;
+            display: inline-block;
+            // @include border;
+            // padding: 3rem;
+
+            .dot-character {
+                font-size: inherit;
+                @include h2;
+                position: relative;
+
+                .dot1 {
+                    @include dot-half(45%, 22%);
+                }
+
+                .dot2 {
+                    @include dot-half(65%, 22%);
+                }
+            }
+        }
+
+        .swiper {
+            width: 100%;
+            height: auto;
+            // margin-top: 6rem;
+            // display: none;
+            // grid-template-columns: repeat(12, 1fr);
+            // column-gap: 7rem;
+            // grid-template-columns: repeat(12, 1fr);
+            // column-gap: 7rem;
+
+            .swiper-wrapper {
+                margin-top: 6rem;
+            }
+            .swiper-pagination {
+                position: relative;
+            }
+        }
+
+        .swiper-pagination-bullet {
+            @include pill;
+            font-family: $headlines;
+            width: auto;
+            height: auto;
+            opacity: 1;
+        }
+        .swiper-pagination-bullet-active {
+            color: $color-light;
+            background: $color-dark;
+        }
+
+        // .places-content {
+        //     margin-top: 6rem;
+        //     // display: none;
+        //     grid-template-columns: repeat(12, 1fr);
+        //     column-gap: 7rem;
+        //     // transition: transform 1s cubic-bezier(0.48, 0.26, 0.06, 0.95);
+        //     // grid-template-areas: 'pill-navigation pill-navigation' 'timetables timetables' 'description image';
+
+        //     .places-dot {
+        //         // transform: scale(3);
+        //         @include dot-half(50%, 50%);
+        //         width: clamp(2.5rem, 2.5rem, 3rem);
+        //         height: clamp(2.5rem, 2.5rem, 3rem);
+        //         position: relative;
+        //     }
+
+        //     .places-subheader {
+        //         grid-area: subheader;
+        //         grid-column: 2/13;
+        //         grid-row: 1/2;
+        //         transition: transform 2s cubic-bezier(0.4, 0, 0, 1);
+        //     }
+
+        //     // .places-subheader:hover {
+        //     //     transform: translateX(-100vw);
+        //     // }
+
+        //     .timetables {
+        //         grid-area: timetables;
+        //         grid-column: 2/8;
+        //         grid-row: 3/4;
+        //         display: flex;
+        //         justify-content: space-between;
+        //         transition: transform 2s cubic-bezier(0.4, 0, 0, 1);
+
+        //         p {
+        //             margin: 0;
+        //         }
+        //     }
+
+        //     // .timetables:hover {
+        //     //     transform: translateX(-100vw);
+        //     // }
+
+        //     .description {
+        //         grid-area: description;
+        //         grid-column: 2/8;
+        //         grid-row: 2/3;
+        //         transition: transform 2s cubic-bezier(0.4, 0, 0, 1);
+        //     }
+
+        //     // .description:hover {
+        //     //     transform: translateX(-100vw);
+        //     // }
+
+        //     .places-imagery-container {
+        //         grid-area: image;
+        //         grid-column: 8/12;
+        //         grid-row: 2/4;
+        //         width: 100%;
+        //         position: relative;
+        //         transition: transform 2s cubic-bezier(0.6, 0, 0, 1);
+
+        //         .image {
+        //             position: absolute;
+        //             width: 100%;
+        //             top: -16%;
+        //             left: 45%;
+        //             transform: translateX(-50%) scale(1.15);
+        //         }
+
+        //         @include circle-with-dot;
+        //         .circle {
+        //             background-color: $color-light;
+        //         }
+        //     }
+
+        //     // .places-imagery-container:hover {
+        //     //     transform: translateX(-100vw);
+        //     // }
+        // }
+
+        // .places-content:hover {
+        //     transform: translateX(-100vw);
+        // }
+
+        // .pill-navigation {
+        //     display: flex;
+        //     justify-content: space-between;
+        //     align-items: center;
+        //     grid-area: pill-navigation;
+        //     grid-column: 2/12;
+        //     grid-row: 4/5;
+        //     padding: 5rem;
+
+        //     .swiper-button-next.prevBtn,
+        //     .nextBtn {
+        //         width: 4rem;
+        //         height: 4rem;
+        //         padding: 1rem 1rem;
+        //         fill: $color-dark;
+        //         cursor: pointer;
+        //     }
+        // }
+    }
+}
+
+// ┌─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=┐
+// │***           PLACES ENDS            ***│
+// └=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─┘

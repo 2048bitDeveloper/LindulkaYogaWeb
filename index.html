@@ -1,96 +1,223 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#fff3f1">
-    <title>Linda Donathova Yoga</title>
-    <link rel="stylesheet" href="style.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#fff3f1" />
+        <title>Linda Donathova Yoga</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="/node_modules/swiper/swiper-bundle.min.css"
+        />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&family=Manrope:wght@200;300;400&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&family=Manrope:wght@200;300;400&display=swap"
+            rel="stylesheet"
+        />
 
-    <!-- <script src="https://kit.fontawesome.com/b1f4936ea9.js" crossorigin="anonymous"></script> -->
-</head>
+        <script
+            src="https://kit.fontawesome.com/b1f4936ea9.js"
+            crossorigin="anonymous"
+        ></script>
+        <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/> -->
 
+        <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> -->
+        <script src="/node_modules/swiper/swiper-bundle.min.js"></script>
+    </head>
 
-<body>
+    <body>
+        <!--
+// ┌─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=┐
+// │***          NAVBAR STARTS           ***│
+// └=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─┘
+-->
 
-        <!-- NAVBAR STARTS -->
+        <header id="header">
+            <div id="header-container" class="wrapper">
+                <nav id="navbar">
+                    <ul id="navbar-ul">
+                        <li>
+                            <a href="#welcome-section" class="logo">
+                                <img src="/assets/li-logo-websize.svg" alt="" />
+                            </a>
+                        </li>
+                        <li><a href="#about-section">O mně</a></li>
+                        <li><a href="#places">Kde mě najdete</a></li>
+                        <li><a href="#achievements">Achievements</a></li>
+                        <!-- <li><a href="#">Reference</a></li> -->
+                    </ul>
+                </nav>
 
-    <header id="header">
-        <div id="header-container" class="wrapper">
-            <nav id="navbar">
-                <ul id="navbar-ul">
-                    <li><a href="#about-section">O mně</a></li>
-                    <li><a href="#achievements">Achievements</a></li>
-                    <li><a href="#">Certifikáty</a></li>
-                    <li><a href="#">Reference</a></li>
-                </ul>
-            </nav>
-
-            <div id="button-phone">
-                <a href="tel:00420603175105">
-                    <button id="button-phone-number">603 175 105</button>
-                    <div class="phone-icon">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 297.64 419.531" enable-background="new 0 0 297.64 419.531"
-                        xml:space="preserve">
-                        <path d="M148.82,60.945C66.629,60.945,0,127.574,0,209.765s66.629,148.82,148.82,148.82c82.191,0,148.82-66.629,148.82-148.82
+                <div id="button-phone">
+                    <a href="tel:00420603175105">
+                        <button id="button-phone-number">603 175 105</button>
+                        <div class="phone-icon">
+                            <svg
+                                version="1.1"
+                                id="Layer_1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                x="0px"
+                                y="0px"
+                                viewBox="0 0 297.64 419.531"
+                                enable-background="new 0 0 297.64 419.531"
+                                xml:space="preserve"
+                            >
+                                <path
+                                    d="M148.82,60.945C66.629,60.945,0,127.574,0,209.765s66.629,148.82,148.82,148.82c82.191,0,148.82-66.629,148.82-148.82
                         S231.011,60.945,148.82,60.945z M81.956,294.826c-4.874,0-9.036-3.311-10.125-8.045l-7.72-33.479
                         c-1.188-4.871,1.33-9.92,5.98-11.913l36.036-15.446c4.246-1.838,9.235-0.603,12.118,2.979l14.63,17.879
                         c23.007-11.295,41.703-29.99,52.998-52.984l-17.879-14.649c-3.57-2.917-4.791-7.86-2.984-12.105L180.469,131
                         c2.024-4.62,7.036-7.156,11.912-6.021l33.472,7.727c4.733,1.08,8.045,5.243,8.045,10.112
-                        C233.898,226.595,165.734,294.826,81.956,294.826z"/>
-                        </svg>
-                    </div>
+                        C233.898,226.595,165.734,294.826,81.956,294.826z"
+                                />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- hamburger menu for phone-screens -->
+                <a id="hamburger">
+                    <i class="fa fa-bars"></i>
                 </a>
             </div>
+        </header>
 
-            <!-- hamburger menu for phone-screens -->
-            <a id="hamburger">
-                <i class="fa fa-bars"></i>
-            </a>
+        <!-- 
+// ┌─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=┐
+// │***           NAVBAR ENDS            ***│
+// └=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─┘
+ -->
 
-    </div>
-    </header>
+        <main>
+            <!--
+// ┌─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=┐
+// │***       INFO MODAL STARTS          ***│
+// └=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─┘
+-->
 
-        <!-- NAVBAR ENDS -->
+            <div id="modal-button" class="modal-button">
+                <p class="date-long">Joga víkend <br />17.-20. 11. 2022</p>
+                <p class="date-short">Joga víkend 11/2022</p>
+            </div>
 
-    <main>
+            <div id="modal" class="modal">
+                <span class="close" onclick="hideModal()">&times;</span>
+                <h2>Joga víkend 17. 11. - 20. 11. 2022</h2>
+                <p class="perex">
+                    Tohle je perex vehicula, consectetur ante vitae, posuere
+                    enim. Integer eget arcu eleifend, rhoncus urna id, porttitor
+                    diam. Mauris in augue efficitur, convaInteger id ex
+                    vehicula, consectetur ante vitae, posuere enim. Integer eget
+                    arcu eleifend, rho
+                </p>
+                <div class="content">
+                    <h3>Pátek</h3>
+                    <p>
+                        Pátek p id ex vehicula, consectetur ante vitae, posuere
+                        enim. Integer eget arcu eleifend, rhoncus urna id,
+                        porttitor diam. Mauris in augue efficitur, convaInteger
+                        id ex vehicula, consectetur ante vitae, posuere enim.
+                        Integer eget arcu eleifend, rho
+                    </p>
+                    <h3>Sobota</h3>
+                    <p>
+                        Sobota p id ex vehicula, consectetur ante vitae, posuere
+                        enim. Integer eget arcu eleifend, rhoncus urna id,
+                        porttitor diam. Mauris in augue efficitur, convaInteger
+                        id ex vehicula, consectetur ante vitae, posuere enim.
+                        Integer eget arcu eleifend, rho
+                    </p>
+                    <h3>Neděle</h3>
+                    <p>
+                        Neděle p id ex vehicula, consectetur ante vitae, posuere
+                        enim. Integer eget arcu eleifend, rhoncus urna id,
+                        porttitor diam. Mauris in augue efficitur, convaInteger
+                        id ex vehicula, consectetur ante vitae, posuere enim.
+                        Integer eget arcu eleifend, rho
+                    </p>
+                </div>
+                <img src="/assets/210522_163650-resize.jpg" alt="" />
+                <h2 class="modal-price">Pá - Ne: 4350 Kč</h2>
+                <div class="modal-pill">
+                    <a
+                        href="https://wa.me/420603175105?text=Dobrý%20den,%20pošlete%20mi%20prosím%20platební%20informace."
+                        target="_blank"
+                        >Objednat</a
+                    >
+                </div>
+            </div>
 
+            <!--
+// ┌─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=┐
+// │***        INFO MODAL ENDS           ***│
+// └=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─┘
+-->
 
+            <!--
+// ┌─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=┐
+// │***         SOCIALS STARTS           ***│
+// └=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─┘
+-->
 
-        <!-- SOCIALS START -->
-
-        <div id="social-container">
-            <a href="tel:00420603175105">
-                <div class="social-phone-icon">
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                    viewBox="-80 0 380 420" enable-background="new 0 0 297.64 419.531"
-                    xml:space="preserve">
-                    <path d="M148.82,60.945C66.629,60.945,0,127.574,0,209.765s66.629,148.82,148.82,148.82c82.191,0,148.82-66.629,148.82-148.82
+            <div id="social-container">
+                <a href="tel:00420603175105">
+                    <div class="social-phone-icon">
+                        <svg
+                            version="1.1"
+                            id="Layer_1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            viewBox="-80 0 380 420"
+                            enable-background="new 0 0 297.64 419.531"
+                            xml:space="preserve"
+                        >
+                            <path
+                                d="M148.82,60.945C66.629,60.945,0,127.574,0,209.765s66.629,148.82,148.82,148.82c82.191,0,148.82-66.629,148.82-148.82
                     S231.011,60.945,148.82,60.945z M81.956,294.826c-4.874,0-9.036-3.311-10.125-8.045l-7.72-33.479
                     c-1.188-4.871,1.33-9.92,5.98-11.913l36.036-15.446c4.246-1.838,9.235-0.603,12.118,2.979l14.63,17.879
                     c23.007-11.295,41.703-29.99,52.998-52.984l-17.879-14.649c-3.57-2.917-4.791-7.86-2.984-12.105L180.469,131
                     c2.024-4.62,7.036-7.156,11.912-6.021l33.472,7.727c4.733,1.08,8.045,5.243,8.045,10.112
-                    C233.898,226.595,165.734,294.826,81.956,294.826z"/>
-                    </svg>
-                </div>
-            </a>
+                    C233.898,226.595,165.734,294.826,81.956,294.826z"
+                            />
+                        </svg>
+                    </div>
+                </a>
 
-            <a href="https://www.facebook.com/profile.php?id=100010461367949" target="_blank">
-                <!-- FACEBOOK icon -->
-                <div class="social-facebook-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-120 0 650 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
-                </div>
-            </a>
-            <a href="https://wa.me/420603175105?text=Dobrý%20den,%20mám%20zájem%20o%20vaší%20lekci%20jogy." target="_blank"></i>
-                <!-- WHATSAPP icon -->
-                <div class="social-whatsapp-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-60 0 370 512"><path d="M252.723,104.564c-27.808-27.806-64.696-43.1-103.996-43.1c-81.009,0-146.909,65.901-147.001,146.91
+                <a
+                    href="https://www.facebook.com/profile.php?id=100010461367949"
+                    target="_blank"
+                >
+                    <!-- FACEBOOK icon -->
+                    <div class="social-facebook-icon">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="-120 0 650 512"
+                        >
+                            <path
+                                d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                            />
+                        </svg>
+                    </div>
+                </a>
+                <a
+                    href="https://wa.me/420603175105?text=Dobrý%20den,%20mám%20zájem%20o%20vaší%20lekci%20jogy."
+                    target="_blank"
+                >
+                    <!-- WHATSAPP icon -->
+                    <div class="social-whatsapp-icon">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="-60 0 370 512"
+                        >
+                            <path
+                                d="M252.723,104.564c-27.808-27.806-64.696-43.1-103.996-43.1c-81.009,0-146.909,65.901-147.001,146.91
                         c0,25.952,6.766,51.255,19.648,73.5L0.52,358.065l77.95-20.483c21.411,11.678,45.603,17.888,70.257,17.888
                         c81.009,0,148.393-65.9,148.393-146.909C297.12,169.26,280.437,132.371,252.723,104.564z M220.74,260.929
                         c-3.059,8.618-17.704,16.404-24.748,17.425c-11.679,1.761-20.762,0.834-44.026-9.177c-36.797-15.943-60.896-53.017-62.748-55.427
@@ -98,188 +225,409 @@
                         c2.41,0,4.913,0,7.044,0.092c2.226,0.093,5.283-0.834,8.25,6.303c3.057,7.322,10.38,25.396,11.307,27.25
                         c0.928,1.854,1.576,3.986,0.279,6.396c-7.045,14.088-14.553,13.533-10.752,20.021c14.18,24.376,28.362,32.812,49.958,43.657
                         c3.707,1.853,5.84,1.574,7.972-0.927c2.131-2.411,9.176-10.752,11.586-14.368c2.408-3.707,4.913-3.058,8.248-1.853
-                        c3.338,1.204,21.411,10.102,25.118,11.956c3.708,1.854,6.117,2.779,7.046,4.265C223.798,244.986,223.798,252.401,220.74,260.929z"/></svg>
-                </div>
-            </a>
-        </div>
+                        c3.338,1.204,21.411,10.102,25.118,11.956c3.708,1.854,6.117,2.779,7.046,4.265C223.798,244.986,223.798,252.401,220.74,260.929z"
+                            />
+                        </svg>
+                    </div>
+                </a>
+            </div>
 
-        
+            <!--
+// ┌─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=┐
+// │***          SOCIALS ENDS            ***│
+// └=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─┘
+-->
 
-        <!-- SOCIALS END -->
+            <!--
+// ┌─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=┐
+// │***         WELCOME STARTS           ***│
+// └=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─┘
+-->
 
-
-        <!-- WELCOME SECTION START — LINDA DONATHOVA -->
-
-        <section id="welcome-section">
-            <div class="welcome-section-background">
+            <section id="welcome-section">
                 <div class="welcome-section-container wrapper">
                     <div class="welcome-text-container">
                         <h1 class="linda">
-                            <div class="dot1"></div>Linda
+                            <div class="dot1"></div>
+                            Linda
                         </h1>
                         <h1 class="donathova">
                             <div class="dot2"></div>
-                            <div class="dot3"></div>Donathova
+                            <div class="dot3"></div>
+                            Donathova
                         </h1>
                         <div class="welcome-text">
-                            <p>Integer id ex vehicula, consectetur ante vitae, posuere enim. Integer eget arcu eleifend, rhoncus urna id, porttitor diam. Mauris in augue efficitur, conva</p>
+                            <p>
+                                Integer id ex vehicula, consectetur ante vitae,
+                                posuere enim. Integer eget arcu eleifend,
+                                rhoncus urna id, porttitor diam. Mauris in augue
+                                efficitur, conva
+                            </p>
                         </div>
                     </div>
 
                     <div class="welcome-imagery-container">
-                        <div class="circle fa-spin">
+                        <!-- <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="svg-circle">
+                        <circle cx="50" cy="50" r="50" />
+                      </svg> -->
+                        <div class="circle">
                             <div class="dot"></div>
                         </div>
-                        <img src="/assets/welcome-section-img.png" alt="assanna" class="image">
+                        <img
+                            src="/assets/welcome-section-img.png"
+                            alt="assanna"
+                            class="image"
+                        />
                     </div>
-                
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- WELCOME SECTION ENDS -->
+            <!--
+// ┌─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=┐
+// │***          WELCOME ENDS            ***│
+// └=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─┘
+-->
 
+            <!--
+// ┌─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=┐
+// │***          ABOUT STARTS            ***│
+// └=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─┘
+-->
 
-
-
-        <!-- ABOUT SECTION STARTS -->
-
-        <section id="about-section">
-            <div class="about-section-container">
-
-                <div class="about-section-dots">
-                    <div class="dots">
-                        <div class="dot"></div>
-                        <div class="dot"></div>
+            <section id="about-section">
+                <div class="about-section-container">
+                    <div class="about-section-dots">
+                        <div class="dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                        </div>
                     </div>
-                </div>     
 
-                <div class="about-section-content-wrapper">
+                    <div class="about-section-content-wrapper">
+                        <div class="about-section-content-background"></div>
 
-                    <div class="about-section-content-background"></div>
-
-                    <div class="about-section-content">
-
-                        <div class="about-imagery-container">
-                            <div class="circle">
+                        <div class="about-section-content">
+                            <div class="about-imagery-container">
+                                <div class="circle">
+                                    <div class="dot"></div>
+                                </div>
+                                <img
+                                    src="/assets/about-section-img.png"
+                                    alt=""
+                                    class="image"
+                                />
                             </div>
-                            <img src="/assets/about-section-img.png" alt="" class="image">
+
+                            <div class="about-text-container">
+                                <h2>
+                                    O mně
+                                    <div class="dot"></div>
+                                </h2>
+                                <p class="bold">
+                                    Integer id ex vehicula, consectetur ante
+                                    vitae, posuere enim. Integer eget arcu
+                                    eleifend, rhoncus urna id, porttitor diam.
+                                    Mauris in augue efficitur, conva
+                                </p>
+                                <ul>
+                                    <li>
+                                        Mauris in augue efficitur, conva Integer
+                                        id ex vehicula, consectetur ante vitae,
+                                    </li>
+                                    <li>
+                                        rhoncus urna id, porttitor diam. Mauris
+                                        in augue efficitur, conva Integer id ex
+                                        vehicula, consectetur ante v
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        
-                        <div class="about-text-container">
-                            <h2>O mně
-                                <div class="dot"></div>
-                            </h2>
-                            <p class="perex">Integer id ex vehicula, consectetur ante vitae, posuere enim. Integer eget arcu eleifend, rhoncus urna id, porttitor diam. Mauris in augue efficitur, conva</p>
-                            <ul>
-                                <li>Mauris in augue efficitur, conva Integer id ex vehicula, consectetur ante vitae, </li>
-                                <li> rhoncus urna id, porttitor diam. Mauris in augue efficitur, conva Integer id ex vehicula, consectetur ante v</li>
-                            </ul>
-                            
+                    </div>
+
+                    <div class="about-section-dots">
+                        <div class="dots">
+                            <div class="dot"></div>
+                            <div class="dot"></div>
                         </div>
-                    
                     </div>
                 </div>
-                    
+            </section>
 
-                <div class="about-section-dots">
-                    <div class="dots">
+            <!-- ABOUT SECTION ENDS -->
+
+            <i class="fa-solid fa-circle-phone phone-icon"></i>
+
+            <!--
+// ┌─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=┐
+// │***            ABOUT ENDS            ***│
+// └=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─┘
+-->
+
+            <!--
+// ┌─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=┐
+// │***         PLACES STARTS            ***│
+// └=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─┘
+-->
+
+            <section id="places">
+                <div class="places-container wrapper">
+                    <div class="places-header">
+                        <h2>
+                            Kde m<span class="dot-character"
+                                >e
+                                <div class="dot1"></div>
+                            </span>
+                            na<span class="dot-character"
+                                >j
+                                <div class="dot2"></div></span
+                            >dete
+                        </h2>
+                    </div>
+
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <h3 class="places-subheader">
+                                    Hatha yoga
+                                    <div class="dot"></div>
+                                </h3>
+                                <div class="timetables">
+                                    <div class="timetable-1">
+                                        <p class="bold">Každé úterý</p>
+                                        <p>7:00 - 8:00</p>
+                                    </div>
+
+                                    <div class="dot"></div>
+
+                                    <div class="timetable-2">
+                                        <p class="bold">Každý čtvrtek</p>
+                                        <p>7:00 - 8:00</p>
+                                    </div>
+                                </div>
+
+                                <div class="places-imagery-container">
+                                    <div class="circle">
+                                        <div class="dot"></div>
+                                    </div>
+                                    <img
+                                        src="/assets/welcome-section-img.png"
+                                        alt="assanna"
+                                        class="image"
+                                    />
+                                </div>
+
+                                <div class="description">
+                                    <p>
+                                        Jin yoga je odnoží jógy, pro kterou je
+                                        typická jemnost, s níž se cvičí.V každé
+                                        poloze se setrvává několik minut when
+                                        you thing of yoga in general terms. With
+                                        Hatha yoga there is no need fo you to
+                                        feel like your life is out of control.
+                                        You learn to direct and master your
+                                        energy.
+                                    </p>
+                                    <p>
+                                        Tha practice involves breath, body and
+                                        mind and classess are usually 45 minutes
+                                        to 90 minutes of breathing, yoga poses
+                                        and meditation
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <h3 class="places-subheader">
+                                    Jin yoga
+                                    <div class="dot"></div>
+                                </h3>
+                                <div class="timetables">
+                                    <div class="timetable-1">
+                                        <p class="bold">Každé úterý</p>
+                                        <p>7:00 - 8:00</p>
+                                    </div>
+
+                                    <div class="dot"></div>
+
+                                    <div class="timetable-2">
+                                        <p class="bold">Každý čtvrtek</p>
+                                        <p>7:00 - 8:00</p>
+                                    </div>
+                                </div>
+
+                                <div class="places-imagery-container">
+                                    <div class="circle">
+                                        <div class="dot"></div>
+                                    </div>
+                                    <img
+                                        src="/assets/welcome-section-img.png"
+                                        alt="assanna"
+                                        class="image"
+                                    />
+                                </div>
+
+                                <div class="description">
+                                    <p>
+                                        Jin yoga je odnoží jógy, pro kterou je
+                                        typická jemnost, s níž se cvičí.V každé
+                                        poloze se setrvává několik minut when
+                                        you thing of yoga in general terms. With
+                                        Hatha yoga there is no need fo you to
+                                        feel like your life is out of control.
+                                        You learn to direct and master your
+                                        energy.
+                                    </p>
+                                    <p>
+                                        Tha practice involves breath, body and
+                                        mind and classess are usually 45 minutes
+                                        to 90 minutes of breathing, yoga poses
+                                        and meditation
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <h3 class="places-subheader">
+                                    Aero yoga
+                                    <div class="dot"></div>
+                                </h3>
+                                <div class="timetables">
+                                    <div class="timetable-1">
+                                        <p class="bold">Každé úterý</p>
+                                        <p>7:00 - 8:00</p>
+                                    </div>
+
+                                    <div class="dot"></div>
+
+                                    <div class="timetable-2">
+                                        <p class="bold">Každý čtvrtek</p>
+                                        <p>7:00 - 8:00</p>
+                                    </div>
+                                </div>
+
+                                <div class="places-imagery-container">
+                                    <div class="circle">
+                                        <div class="dot"></div>
+                                    </div>
+                                    <img
+                                        src="/assets/welcome-section-img.png"
+                                        alt="assanna"
+                                        class="image"
+                                    />
+                                </div>
+
+                                <div class="description">
+                                    <p>
+                                        Jin yoga je odnoží jógy, pro kterou je
+                                        typická jemnost, s níž se cvičí.V každé
+                                        poloze se setrvává několik minut when
+                                        you thing of yoga in general terms. With
+                                        Hatha yoga there is no need fo you to
+                                        feel like your life is out of control.
+                                        You learn to direct and master your
+                                        energy.
+                                    </p>
+                                    <p>
+                                        Tha practice involves breath, body and
+                                        mind and classess are usually 45 minutes
+                                        to 90 minutes of breathing, yoga poses
+                                        and meditation
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!--
+// ┌─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=┐
+// │***         PLACES ENDS            ***│
+// └=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─┘
+-->
+
+            <!--
+// ┌─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=┐
+// │***      ACHIEVEMENTS STARTS         ***│
+// └=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─┘
+-->
+
+            <section id="achievements">
+                <div class="achievements-conatiner wrapper">
+                    <h2 class="achievements-header">
+                        Achievements
                         <div class="dot"></div>
-                        <div class="dot"></div>
+                    </h2>
+
+                    <ul class="ul-top-left">
+                        <li>
+                            Mauris in augue efficitur, conva Integer id ex
+                            vehicula, consectetur ante vitae,
+                        </li>
+                        <li>
+                            rhoncus urna id, porttitor diam. Mauris in augue
+                            efficitur, conva Integer id ex vehicula, consectetur
+                            ante v
+                        </li>
+                        <li>
+                            rhoncus urna id, porttitor diam. Mauris in augue
+                            efficitur, conva Integer id ex vehicula, consectetur
+                            ante v
+                        </li>
+                    </ul>
+
+                    <div class="imagery-container">
+                        <div class="circle"></div>
+                        <img
+                            src="/assets/achivements-img-v3.png"
+                            alt=""
+                            class="image"
+                        />
                     </div>
+
+                    <ul class="ul-bottom-right">
+                        <li>
+                            Mauris in augue efficitur, conva Integer id ex
+                            vehicula, consectetur ante vitae,
+                        </li>
+                        <li>
+                            rhoncus urna id, porttitor diam. Mauris in augue
+                            efficitur, conva Integer id ex vehicula, consectetur
+                            ante v
+                        </li>
+                        <li>
+                            rhoncus urna id, porttitor diam. Mauris in augue
+                            efficitur, conva Integer id ex vehicula, consectetur
+                            ante v
+                        </li>
+                    </ul>
                 </div>
+            </section>
 
-            </div>
+            <!--
+// ┌─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=┐
+// │***       ACHIEVEMENTS ENDS          ***│
+// └=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─┘
+-->
+        </main>
 
-        </section>
+        <!-- FOOTER STARTS -->
 
-        <!-- ABOUT SECTION ENDS -->
+        <footer></footer>
 
-        <i class="fa-solid fa-circle-phone phone-icon"></i>
+        <!-- FOOTER ENDS -->
 
-
-
-        <!-- ACHIEVEMENTS SECTION STARTS -->
-
-        <section id="achievements">
-            <div class="achievements-conatiner wrapper">
-
-                <h2 class="achievements-header">Achievements
-                    <div class="dot"></div>
-                </h2>
-
-                <ul class="ul-top-left">
-                    <li>Mauris in augue efficitur, conva Integer id ex vehicula, consectetur ante vitae, </li>
-                    <li> rhoncus urna id, porttitor diam. Mauris in augue efficitur, conva Integer id ex vehicula, consectetur ante v</li>
-                    <li> rhoncus urna id, porttitor diam. Mauris in augue efficitur, conva Integer id ex vehicula, consectetur ante v</li>
-                </ul>
-
-                <div class="imagery-container">
-                    <div class="circle">
-                    </div>
-                    <img src="/assets/achivements-img-v3.png" alt="" class="image">
-                </div>
-
-                <ul class="ul-bottom-right">
-                    <li>Mauris in augue efficitur, conva Integer id ex vehicula, consectetur ante vitae, </li>
-                    <li> rhoncus urna id, porttitor diam. Mauris in augue efficitur, conva Integer id ex vehicula, consectetur ante v</li>
-                    <li> rhoncus urna id, porttitor diam. Mauris in augue efficitur, conva Integer id ex vehicula, consectetur ante v</li>
-                </ul>
-            </div>
-
-        </section>
-
-        <!-- ACHIEVEMENTS SECTION ENDS -->
-
-
-
-
-        <!-- CERTIFICATES SECTION STARTS -->
-
-        <section id="certificates">
-
-
-        </section>
-
-        <!-- CERTIFICATES SECTION ENDS -->
-
-
-
-
-        <!-- REFERENCE SECTION STARTS -->
-
-        <section id="reference">
-
-
-        </section>
-
-        <!-- REFERENCE SECTION ENDS -->
-
-
-
-
-        <!-- CONTACTS SECTION STARTS -->
-
-        <section id="contacts">
-
-
-        </section>
-
-        <!-- CONTACT SECTION ENDS -->
-
-    </main>
-
-
-    <!-- FOOTER STARTS -->
-
-    <footer>
-        
-    </footer>
-
-    <!-- FOOTER ENDS -->
-
-
-<script src="https://kit.fontawesome.com/b1f4936ea9.js" crossorigin="anonymous"></script>
-<script src="/script.js"></script>
-</body>
+        <script
+            src="https://kit.fontawesome.com/b1f4936ea9.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="/script.js"></script>
+    </body>
 </html>
