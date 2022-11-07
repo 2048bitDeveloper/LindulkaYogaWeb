@@ -13,6 +13,7 @@
     .places-container {
         .places-header {
             position: relative;
+            width: 100%;
             display: inline-block;
             // @include border;
             // padding: 3rem;
@@ -27,14 +28,14 @@
                 }
 
                 .dot2 {
-                    @include dot-half(65%, 22%);
+                    @include dot-half(25%, 22%);
                 }
             }
         }
 
         .swiper {
             width: 100%;
-            height: auto;
+            height: 100%;
             // margin-top: 6rem;
             // display: none;
             // grid-template-columns: repeat(12, 1fr);
@@ -47,6 +48,65 @@
             }
             .swiper-pagination {
                 position: relative;
+            }
+
+            .swiper-button-next,.swiper-button-prev{
+                bottom:2%;
+            }
+
+            .swiper-slide {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                column-gap: 7rem;
+                margin-bottom: 5rem;
+
+                .places-subheader {
+                    grid-column: 1/12;
+                    padding-bottom: 5rem;
+                }
+
+                .timetables {
+                    grid-area: timetables;
+                    grid-column: 2/8;
+                    grid-row: 3/4;
+                    display: flex;
+                    justify-content: space-between;
+                    transition: transform 2s cubic-bezier(0.4, 0, 0, 1);
+    
+                    p {
+                        margin: 0;
+                    }
+                }
+
+                .description {
+                    grid-area: description;
+                    grid-column: 2/8;
+                    grid-row: 2/3;
+                    transition: transform 2s cubic-bezier(0.4, 0, 0, 1);
+                }
+
+                .places-imagery-container {
+                    grid-area: image;
+                    grid-column: 8/12;
+                    grid-row: 2/4;
+                    width: 100%;
+                    position: relative;
+                    transition: transform 2s cubic-bezier(0.6, 0, 0, 1);
+    
+                    .image {
+                        position: absolute;
+                        width: 100%;
+                        top: -16%;
+                        left: 45%;
+                        transform: translateX(-50%) scale(1.15);
+                    }
+    
+                    @include circle-with-dot;
+                    .circle {
+                        background-color: $color-light;
+                    }
+                }
+                
             }
         }
 
