@@ -63,71 +63,41 @@ window.onscroll = function () {
 // │***        SLIDE SHOW START          ***│
 // └=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─┘
 
-// ┌─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=┐
-// │***          SWIPER START            ***│
-// └=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─┘
 
-let menu = ["Hatha yoga", "Jin yoga", "Aero yoga"];
 
-const swiper = new Swiper(".swiper", {
-    // Optional parameters
-    direction: "horizontal",
-    loop: true,
+let slideIndex = 2;
 
-    // If we need pagination
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-          renderBullet: function (index, className) {
-            return '<span class="' + className + '">' + (menu[index]) + '</span>'}
-    },
+function plusSlides(n) {
+    showSlides((slideIndex += n));
+}
 
-    // Navigation arrows
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
+function currentSlide(n) {
+    showSlides((slideIndex = n));
+}
 
-    initialSlide: 1
-});
+function showSlides(n) {
+    let slides = document.getElementsByClassName("places-content");
+    let pills = document.getElementsByClassName("pill");
+    // Make all disappear.
+    if (n > slides.length) {
+        slideIndex = 1;
+    }
+    if (n < 1) {
+        slideIndex = slides.length;
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    // Pill in navigation changing color.
+    for (i = 0; i < pills.length; i++) {
+        pills[i].className = pills[i].className.replace(" active", "");
+    }
 
-// ┌─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=┐
-// │***          SWIPER ENDS             ***│
-// └=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─┘
+    slides[slideIndex - 1].style.display = "grid";
+    pills[slideIndex - 1].className += " active";
+}
 
-// let slideIndex = 2;
-
-// function plusSlides(n) {
-//     showSlides((slideIndex += n));
-// }
-
-// function currentSlide(n) {
-//     showSlides((slideIndex = n));
-// }
-
-// function showSlides(n) {
-//     let slides = document.getElementsByClassName("places-content");
-//     let pills = document.getElementsByClassName("pill");
-//     // Make all disappear.
-//     if (n > slides.length) {
-//         slideIndex = 1;
-//     }
-//     if (n < 1) {
-//         slideIndex = slides.length;
-//     }
-//     for (i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none";
-//     }
-//     // Pill in navigation changing color.
-//     for (i = 0; i < pills.length; i++) {
-//         pills[i].className = pills[i].className.replace(" active", "");
-//     }
-
-//     slides[slideIndex - 1].style.display = "grid";
-//     pills[slideIndex - 1].className += " active";
-// }
-
-// showSlides(slideIndex);
+showSlides(slideIndex);
 
 // ┌─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=─=┐
 // │***        SLIDE SHOW ENDS           ***│
