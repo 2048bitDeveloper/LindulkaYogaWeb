@@ -24,11 +24,11 @@
                 position: relative;
 
                 .dot1 {
-                    @include dot-half(45%, 22%);
+                    @include dot-half(55%, 22%);
                 }
 
                 .dot2 {
-                    @include dot-half(25%, 22%);
+                    @include dot-half(55%, 22%);
                 }
             }
         }
@@ -51,7 +51,7 @@
             }
 
             .swiper-button-next,.swiper-button-prev{
-                bottom:2%;
+                bottom:3%;
             }
 
             .swiper-slide {

@@ -77,7 +77,6 @@ li {
 }
 
 button {
-  border: none;
   text-decoration: none;
   cursor: pointer;
 }
@@ -193,7 +192,6 @@ li {
 }
 
 button {
-  border: none;
   text-decoration: none;
   cursor: pointer;
 }
@@ -403,7 +401,6 @@ li {
 }
 
 button {
-  border: none;
   text-decoration: none;
   cursor: pointer;
 }
@@ -610,7 +607,6 @@ li {
 }
 
 button {
-  border: none;
   text-decoration: none;
   cursor: pointer;
 }
@@ -830,7 +826,6 @@ li {
 }
 
 button {
-  border: none;
   text-decoration: none;
   cursor: pointer;
 }
@@ -1078,7 +1073,6 @@ li {
 }
 
 button {
-  border: none;
   text-decoration: none;
   cursor: pointer;
 }
@@ -1141,7 +1135,7 @@ i {
   background-color: rgb(255, 210, 165);
   transform: translate(-50%, -50%);
   position: absolute;
-  left: 45%;
+  left: 55%;
   top: 22%;
 }
 #places .places-container .places-header .dot-character .dot2 {
@@ -1151,7 +1145,7 @@ i {
   background-color: rgb(255, 210, 165);
   transform: translate(-50%, -50%);
   position: absolute;
-  left: 25%;
+  left: 55%;
   top: 22%;
 }
 #places .places-container .swiper {
@@ -1165,7 +1159,7 @@ i {
   position: relative;
 }
 #places .places-container .swiper .swiper-button-next, #places .places-container .swiper .swiper-button-prev {
-  bottom: 2%;
+  bottom: 3%;
 }
 #places .places-container .swiper .swiper-slide {
   display: grid;
@@ -1345,7 +1339,6 @@ li {
 }
 
 button {
-  border: none;
   text-decoration: none;
   cursor: pointer;
 }
@@ -1538,7 +1531,6 @@ li {
 }
 
 button {
-  border: none;
   text-decoration: none;
   cursor: pointer;
 }
